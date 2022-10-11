@@ -131,7 +131,7 @@ s0.goTo(6400)
 # Init a 1036 steps per revolution stepper on Port 1 - this is for a stepper with a 5.18:1 planetary transmission
 # https://www.omc-stepperonline.com/economy-planetary-gearbox/nema-17-stepper-motor-bipolar-l48mm-w-gear-raio-51-planetary-gearbox-17hs19-1684s-pg5.html?mfp=161-motor-nema-size%5BNema%2017%5D
 
-s1 = stepper(port=1, micro_steps=32, hold_current=8, run_current=10, accel_current=10, deaccel_current=10,
+s1 = stepper(port=0, micro_steps=32, hold_current=8, run_current=10, accel_current=10, deaccel_current=10,
              steps_per_unit=1038, speed=8)
 s1.setAccel(0x50)
 s1.setDecel(0x100)
