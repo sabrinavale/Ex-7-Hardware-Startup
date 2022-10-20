@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b97d29c9-63b3-4ea9-b9cf-cea45a8eee13" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminScreen.kv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/Cyprus_Commands/Cyprus_Commands_RPi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/Cyprus_Commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/Cyprus_Commands/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/Joystick.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/LidarSensor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/MixPanel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/RPiMIB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/STEPPER.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/ShutdownModule/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/ShutdownModule/install-power-shutdown.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/ShutdownModule/power_shutdown/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/ShutdownModule/power_shutdown/power_shutdown.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/SlaveMaster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/TemperatureSensor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/DPEAButton.kv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/DPEAButton.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/ImageButton.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/PassCodeScreen.kv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/PassCodeScreen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/PauseScreen.kv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/PauseScreen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/SelfUpdatingLabel.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/images/DPEALogoTransparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/images/shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/images/white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/kivy/selfupdatinglabel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/slush_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/speaker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/stepper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pidev/stepperutilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Ex-7-Hardware-Startup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ex-7-Hardware-Startup.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.kv" beforeDir="false" afterPath="$PROJECT_DIR$/main.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GKGwllN0LXraJl2jkXQPibqz8m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/student/Documents/Ex-5-Kivy-UI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Ex-7-Hardware-Startup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+    <option name="myConnectionId" value="" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b97d29c9-63b3-4ea9-b9cf-cea45a8eee13" name="Changes" comment="" />
+      <created>1666130103062</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666130103062</updated>
+      <workItem from="1666130104856" duration="453000" />
+      <workItem from="1666130665302" duration="971000" />
+      <workItem from="1666214223782" duration="1357000" />
+      <workItem from="1666300988157" duration="2854000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Ex_7_Hardware_Startup$main.coverage" NAME="main Coverage Results" MODIFIED="1666303665656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

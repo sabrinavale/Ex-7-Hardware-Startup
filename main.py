@@ -1,9 +1,17 @@
 import os
 import kivy
-# import pygame
-# pygame.init()
+import pygame
+pygame.init()
 
-#os.environ['DISPLAY'] = ":0.0"
+import spidev
+import os
+from time import sleep
+import RPi.GPIO as GPIO
+from pidev.stepper import stepper
+from Slush.Devices import L6470Registers
+spi = spidev.SpiDev()
+
+os.environ['DISPLAY'] = ":0.0"
 #os.environ['KIVY_WINDOW'] = 'egl_rpi'
 
 from kivy.app import App
@@ -12,6 +20,7 @@ from kivy.lang import Builder
 from kivy.animation import Animation
 from kivy.uix.screenmanager import ScreenManager, Screen
 
+from pidev.MixPanel import MixPanel
 from pidev.kivy.PassCodeScreen import PassCodeScreen
 from pidev.kivy.PauseScreen import PauseScreen
 from kivy.clock import Clock
@@ -19,10 +28,15 @@ from pidev.kivy import DPEAButton
 from pidev.kivy import ImageButton
 from pidev.kivy.selfupdatinglabel import SelfUpdatingLabel
 
+s0 = stepper(port=0, micro_steps=32, hold_current=20, run_current=20, accel_current=20, deaccel_current=20,
+             steps_per_unit=200, speed=8)
+
 from datetime import datetime
 
 time = datetime
 
+MIXPANEL_TOKEN = "x"
+MIXPANEL = MixPanel("Project Name", MIXPANEL_TOKEN)
 
 SCREEN_MANAGER = ScreenManager()
 MAIN_SCREEN_NAME = 'main'
@@ -48,12 +62,22 @@ class NewScreen(Screen):
     def image(self):
         SCREEN_MANAGER.current = 'main'
 
+    def animation(self):
+        #anim = Animation(x=50) + Animation(size=(80, 80), duration=2)
+        anim = Animation(x=100, y=100) + Animation(duration=2)
+        anim.start(self)
 
 
 class MainScreen(Screen):
     """
     Class to handle the main screen and its associated touch events
     """
+    def animation(self):
+        #anim = Animation(x=50) + Animation(size=(80, 80), duration=2)
+        anim = Animation(x=100, y=100) + Animation(duration=2)
+        anim.start(self)
+
+
     def pressed(self):
         """
         Function called on button touch event for button with id: testButton
@@ -76,23 +100,28 @@ class MainScreen(Screen):
         if self.ids.test3.active:
             self.ids.test3.text = "Off"
             self.ids.test3.active = False
+            s0.stop()
         else:
             self.ids.test3.text = "On"
             self.ids.test3.active = True
+            s0.run(1, 20)
 
-    def motor_change(self):
-        if self.ids.motor_label.active:
-            self.ids.motor_label.text = "motor off"
-            self.ids.motor_label.active = False
+    def motor_change_direction(self):
+        if self.ids.test5.active:
+            self.ids.test5.text = "motor counterclockwise"
+            self.ids.test5.active = False
+            s0.run(0, 40)
         else:
-            self.ids.motor_label.text = "motor on"
-            self.ids.motor_label.active = True
+            self.ids.test5.text = "motor clockwise"
+            self.ids.test5.active = True
+            s0.run(1, 40)
 
     def increase(self):
         prior = self.ids.test4.text
         prior = int(prior)
         prior += 1
         self.ids.test4.text = str(prior)
+        s0.run(1, prior)
 
 
 class AdminScreen(Screen):
@@ -154,16 +183,16 @@ MixPanel
 """
 
 
-# def send_event(event_name):
-#     """
-#     Send an event to MixPanel without properties
-#     :param event_name: Name of the event
-#     :return: None
-#     """
-#     global MIXPANEL
-#
-#     MIXPANEL.set_event_name(event_name)
-#     MIXPANEL.send_event()
+def send_event(event_name):
+    """
+    Send an event to MixPanel without properties
+    :param event_name: Name of the event
+    :return: None
+    """
+    global MIXPANEL
+
+    MIXPANEL.set_event_name(event_name)
+    MIXPANEL.send_event()
 
 
 if __name__ == "__main__":
